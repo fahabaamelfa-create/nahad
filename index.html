@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>نانوپلاس | آموزش نانو در سطح دانشگاه</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <span class="logo">⚛️</span>
+        <div>
+          <h1>نانوپلاس</h1>
+          <p>مسیر یادگیری نانو به سبک بازی‌وار</p>
+        </div>
+      </div>
+      <button class="ghost-btn">ورود دانشجو</button>
+    </header>
+
+    <main class="layout">
+      <section class="path-card">
+        <h2>مسیر: مبانی تا کاربردهای پیشرفته نانو</h2>
+        <div class="progress-wrap">
+          <div class="progress-label">
+            <span>پیشرفت ترم</span>
+            <strong id="progressText">0%</strong>
+          </div>
+          <div class="progress-track" aria-label="میزان پیشرفت">
+            <div id="progressBar" class="progress-fill"></div>
+          </div>
+        </div>
+
+        <ul id="lessonPath" class="lesson-path"></ul>
+      </section>
+
+      <aside class="side-panel">
+        <div class="xp-card">
+          <h3>XP هفته</h3>
+          <p id="xpValue">0 XP</p>
+          <small>با تکمیل هر درس: 25 XP</small>
+        </div>
+
+        <div class="challenge-card">
+          <h3>چالش امروز</h3>
+          <p>در ۵ دقیقه تفاوت نانوکامپوزیت و نانوذره را توضیح بده.</p>
+          <button class="primary-btn">شروع چالش</button>
+        </div>
+
+        <div class="tips-card">
+          <h3>پیشنهاد استاد</h3>
+          <p>
+            قبل از ورود به «نانوفوتونیک»، حتما فصل «مدل درود» را مرور کن تا
+            تحلیل‌ها را دقیق‌تر ببینی.
+          </p>
+        </div>
+      </aside>
+    </main>
+
+    <template id="lessonTemplate">
+      <li class="lesson-node">
+        <button class="lesson-btn" type="button">
+          <span class="lesson-index"></span>
+          <span class="lesson-title"></span>
+          <span class="lesson-state"></span>
+        </button>
+      </li>
+    </template>
+
+    <script src="app.js"></script>
+  </body>
+</html>
